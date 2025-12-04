@@ -7,8 +7,8 @@ import requests
 # ========= CONFIG =========
 
 # Ces valeurs viendront des variables d'environnement sur Render
-TELEGRAM_BOT_TOKEN = os.getenv("7665454289:AAEvEcBp73U5GNawof7y7639CDorhXIQdZY", "")
-TELEGRAM_CHAT_ID = os.getenv("7437857369", "")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
 # Proxy optionnel : ex "http://user:pass@host:port" ou "http://host:port"
 PROXY_URL = os.getenv("PROXY_URL", "").strip()
@@ -178,3 +178,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
